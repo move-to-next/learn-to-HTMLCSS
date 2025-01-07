@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    width: 1920px;
+}
+.hide{
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    margin: -1px;
+}
+
+/* 헤더 영역 */
+header{
+    width: 100vw;
+}
+header .menu{
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+header .menu .top{
+    width: 100%;
+    padding: 3vh 0;
+}
+header .menu .top .logo{
+    float: left;
+}
+header .menu .top .other{
+    float: right;
+}
+/* header - 네비게이션 */
+header .menu nav{
+    clear: both;
+    margin-top: 6vh;
+}
+header .menu nav .gnb{
+    float: left;
+}
+header .menu nav .gnb li{
+    float: left;
+}
+header .menu nav .gnb li img{
+    width: 80%;
+    object-fit: cover;
+}
+header .menu nav a img{
+    width: 10%;
+    object-fit: cover;
+}
+header .menu nav .help{
+    float: right;
+}
+header .menu nav .help li{
+    float: left;
+}
+header .menu nav .help li img{
+    width: 80%;
+    object-fit: cover;
+}
+header .crusell{
+    width: 100%;
+}
+header .crusell img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* article 영역 */
+.menu1{
+    width: 100%;
+}
+.menu1 .menu_list{
+    width: fit-content;
+    margin: 2vh auto;
+}
+.menu1 .menu_list ul li{
+    float: left;
+}
+.menu1 section{
+    width: fit-content;
+    margin: auto;
+}
+.menu1 section .left{
+    width: 50%;
+    float: left;
+}
+.menu1 section .right{
+    width: 50%;
+    float: right;
+}
+.menu1 section .right .product1{
+    float: left;
+}
+.menu1 section .right .product2{
+    float: right;
+}
+.menu1 section .right .product3{
+    clear: both;
+    float: left;
+}
+.menu1 section .right .product4{
+    clear: both;
+    float: right;
+}
+.menu1 section .right img{
+    width: 20vw;
+}
