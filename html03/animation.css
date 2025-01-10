@@ -1,0 +1,40 @@
+@keyframes moveRight {
+    0% {
+      transform: translateX(0);
+      background: red;
+    }
+    100% {
+      transform: translateX(200px);
+      background: blue;
+    }
+  }
+  
+  .element {
+    /* 요소의 원래 스타일 */
+    background: yellow;
+    transform: translateX(50px);
+    
+    animation: moveRight 2s 1s;  /* 1초 지연 후 2초 동안 애니메이션 */
+  }
+  
+  /* backwards를 사용한 경우 */
+  .backwards {
+    animation-fill-mode: backwards;
+    /* 
+    - 시작 전: 0% 상태 적용 (X:0, 빨간색)
+    - 끝난 후: 원래 스타일로 돌아감 (X:50px, 노란색)
+    */
+  }
+
+  .forwards {
+    animation-fill-mode: forwards;
+  }
+  
+  /* both를 사용한 경우 */
+  .both {
+    animation-fill-mode: both;
+    /* 
+    - 시작 전: 0% 상태 적용 (X:0, 빨간색)
+    - 끝난 후: 100% 상태 유지 (X:200px, 파란색)
+    */
+  }

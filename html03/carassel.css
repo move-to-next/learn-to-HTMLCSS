@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+}
+.container{
+    position: relative;
+    width: fit-content;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-64%, -50%);
+    animation: move 12s ease-in-out infinite backwards;
+}
+.banner{
+    width: 50vw;
+    padding: 150px 0;
+    margin: auto;
+}
+.img1{
+    background-color:sandybrown;
+}
+.img2{
+    background-color:darkkhaki;
+}
+.img3{
+    background-color:aquamarine;
+}
+.img4{
+    background-color:greenyellow;
+}
+@keyframes move{
+    0%{
+        transform: translate(-21%, -50%);
+    }
+    20%{
+        transform: translate(-21%, -50%);
+    }
+    25%{
+        transform: translate(-36%, -50%);
+    }
+    45%{
+        transform: translate(-36%, -50%);
+    }
+    50%{
+        transform: translate(-50%, -50%);
+    }
+    70%{
+        transform: translate(-50%, -50%);
+    }
+    75%{
+        transform: translate(-64%, -50%);
+    }
+    95%{
+        transform: translate(-64%, -50%);
+    }
+    100%{
+        transform: translate(-78%, -50%);
+    }
+}
